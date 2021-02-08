@@ -3,11 +3,10 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path')
 
-// this is what they gave me but I think it is supposed to be the one below  const util = require('util');
+//const util = require('util');
 const generateMarkdown = require(utils/generateMarkdown.js);
-// they gave this to me. const { AsyncLocalStorage } = require('async_hooks');
-
-
+//destructuring and bringing in a piece of the package. bringing out the async  part of it. 
+const { AsyncLocalStorage } = require('async_hooks');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
@@ -26,8 +25,8 @@ const questions = [
     ];
 
       // TODO: Create a function to write README file
-function writeToFile ('README.md', generateMarkdown) {
-    return fs.writeFileSync(path.join(process.cwd() 'README.md'), data)
+function writeToFile (fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
     
 //fs.writeToFile('README.md, generateMarkdown)
 }
@@ -36,8 +35,16 @@ function writeToFile ('README.md', generateMarkdown) {
     
     // TODO: Create a function to initialize app
     function init() {
-        inquirer.prompt(questions)//.then promise function
+        inquirer.prompt(questions).then(function(data) { 
+            const markData = generateMarkdown(data);
+            writeToFile ('README.md', markData);
+
+        });
+        
+        //
+       
         //call the function writetoFile using the data that we pass (ie the inquirer responses)
+        
     }
     //      try {
     //          const answers = await questions();
