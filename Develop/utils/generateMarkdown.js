@@ -17,10 +17,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   # Table of Contents
-  ${data.installation}
-  ${data.usage}
-  ${data.license}
-  ${data.test}
+  *Installation
+  *Usage Information
+  *license
+  *Contributions
+  *Testing Instructions
+  *Questions/Contact 
 
   # Installation Instructions
   ${data.installation}
@@ -31,15 +33,16 @@ function generateMarkdown(data) {
   # License
   ${data.license}
 
-  # Contribution
+  # Contributions
   ${data.contribution}
 
   # Testing Instructions
   ${data.test}
 
-  # Questions
+  # Questions/Contact
  ${data.email}
- https://github.com/${data.github}
+
+ *[https://github.com/${data.github}]
 
 
 
