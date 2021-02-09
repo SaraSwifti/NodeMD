@@ -81,17 +81,6 @@ function init() {
     //call the function writetoFile using the data that we pass (ie the inquirer responses)
 
 }
-//      try {
-//          const answers = await questions();
-//          const readME = readMe(answers);
 
-//          await writeFileAsync('README.md', generateMarkdown);
-//          console.log('Sucessful, please find your new README file in the utils folder.');
-//      } catch(err) {
-//          console.log(err);
-//      }
-
-//  };
-// // Function call to initialize app
 init();
 

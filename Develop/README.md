@@ -1,4 +1,4 @@
-# EASY README
+# README Template
   # Description
   An easy README file maker for future projects. 
 
@@ -6,7 +6,7 @@
   Be sure to install all npm packages as described in the JSON folder. 
   For anyone who is writing code and including a README file. 
   MIT
-  None done yet, that’s next week’s homework
+  None yet, That's next week's homework. 
 
   # Installation Instructions
   Be sure to install all npm packages as described in the JSON folder. 
@@ -18,14 +18,14 @@
   MIT
 
   # Contribution
-  Please email me for contribution suggestions
+  Please email me first
 
   # Testing Instructions
-  None done yet, that’s next week’s homework
+  None yet, That's next week's homework. 
 
   # Questions
-  sara.swifti@gmail.com
-  SaraSwifti
+ sara.swifti@gmail.com
+ https://github.com/SaraSwifti
 
 
 
